@@ -155,7 +155,7 @@ header {
 	justify-content: center;
 	width: 950px;
 	height: 300px;
-	background: rgba(9, 4, 50, 0.5);
+	background: rgba(9, 4, 50, 0.7);
 	margin: auto;
 	color: white;
 }
@@ -303,7 +303,7 @@ header {
 	}
 
 	#landing_text {
-		padding: 0px 27px 0px 27px;
+		padding: 0px 35px 0px 35px;
 		font-family: 'Raleway', sans-serif;
 		color: white;
 		font-size: 15px;
@@ -323,7 +323,7 @@ header {
 	#landing {
 		display: flex;
 		width: 350px;
-		height: 370px;
+		height: 450px;
 	}
 
 	#slogan {
@@ -335,20 +335,20 @@ header {
 	}
 
 	#div_h1_landing {
-		font-size: 20px;
+		font-size: 17px;
 		margin-left: 10px;
 		margin-bottom: 17px;
 	}
 
 	#logodiv {
-		width: 39px;
-		height: 39px;
+		width: 33px;
+		height: 33px;
 		background-size: 115%;
 		background-position: center;
 	}
 
 	#landing_text {
-		padding: 0px 27px 0px 27px;
+		padding: 27px 27px 27px 27px;
 		font-family: 'Raleway', sans-serif;
 		color: white;
 		font-size: 15px;
