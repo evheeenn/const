@@ -341,8 +341,9 @@ header {
 	}
 
 	#logodiv {
-		width: 33px;
-		height: 33px;
+		width: 35px;
+		height: 35px;
+		margin-right: 5px;
 		background-size: 115%;
 		background-position: center;
 	}
