@@ -369,8 +369,8 @@ header {
 	#s3_img {
 		margin-right: auto;
 		margin-left: auto;
-		width: 200px;
-		height: 200px;
+		width: 100px;
+		height: 100px;
 		background: url('visual/landinglogo1.png');
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -424,9 +424,14 @@ header {
 	}
 }
 
-@media (max-width: 422px) {
+@media (max-width: 400px) {
 	#s3 {
-		height: 149vh;
+		height: 133vh;
+	}
+
+	#s3_img {
+		width: 100px;
+		height: 100px;
 	}
 
 	#s3 h1 {
