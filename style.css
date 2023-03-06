@@ -304,11 +304,6 @@ header {
 	color: white;
 }
 
-#cards {
-	display: flex;
-	text-align: center;
-	justify-content: space-around;
-}
 
 .container {
   margin-top: 177px;
@@ -334,6 +329,7 @@ header {
   background: #fff;
   margin: 1em;
   padding: 0.5em;
+  border: 7px solid rgba(35, 23, 100, 1);
   border-radius: 10px;
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
 }
