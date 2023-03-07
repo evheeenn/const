@@ -517,7 +517,7 @@
  }
 
  footer button:hover svg {
- 	transform: translateX(3em) rotate(45deg) scale(1.1);
+ 	transform: translateX(2.5em) rotate(45deg) scale(1.1);
  }
 
  footer button:hover span {
