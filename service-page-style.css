@@ -396,169 +396,168 @@
  }
 
  footer {
- 	display: flex;
- 	flex-direction: column;
- 	width: 100%;
- 	height: 100vh;
- 	font-family: 'Raleway', sans-serif;
- 	background: rgba(9, 4, 50, 0.7);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    background: rgba(9, 4, 50, 0.7);
  }
 
  #footer_div1{
- 	display: flex;
- 	margin-top: 170px;
+    display: flex;
+    margin-top: 170px;
  }
 
  #footer_div1_1 {
- 	margin-left: 150px;
+    margin-left: 150px;
  }
 
  #footer_div1_1 ul li {
- 	list-style: none;
- 	margin-bottom: 5px;
+    list-style: none;
+    margin-bottom: 5px;
  }
 
  #footer_div1_1 ul li a {
- 	text-decoration: none;
- 	color: white;
+    text-decoration: none;
+    color: white;
  }
 
  #footer_div1_1 ul li a:hover{
- 	text-decoration: underline;
- 	color: rgba(125, 21, 40, 0.9);
+    text-decoration: underline;
+    color: rgba(125, 21, 40, 0.9);
  }
 
  #footer_div1_2 {
- 	margin-left: 500px;
+    margin-left: 500px;
  }
 
  #logo_footer {
- 	width: 200px;
- 	height: 100px;
- 	margin-bottom: 17px;
- 	background-image: url("IT.png");
- 	background-repeat: no-repeat;
- 	background-size: 100%;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 17px;
+    background-image: url("IT.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
  }
 
  .h2div {
- 	display: flex;
- 	width: 327px;
- 	border-bottom: 1.7px solid white;
- 	margin-bottom: 17px;
+    display: flex;
+    width: 327px;
+    border-bottom: 1.7px solid white;
+    margin-bottom: 17px;
  }
 
  #h2_1 {
- 	color: white;
- 	margin-bottom: 5px;
+    color: white;
+    margin-bottom: 5px;
  }
 
  #h2_2 {
- 	color: white;
- 	margin-bottom: 15px;
- 	padding-bottom: 1px;
+    color: white;
+    margin-bottom: 15px;
+    padding-bottom: 1px;
  }
 
  #inputdiv {
- 	display: flex;
+    display: flex;
  }
 
  .input {
- 	border: none;
- 	border-radius: 15px;
- 	padding: 15px;
- 	background-color: #e8e8e8;
- 	font-size: medium;
- 	font-family: 'Nunito', sans-serif;
- 	font-weight: bold;
- 	max-width: 200px;
- 	margin-right: 17px;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    font-size: medium;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    max-width: 200px;
+    margin-right: 17px;
  }
 
  .input:focus {
- 	outline-color: white;
- 	place-content: "Enter your message!";
+    outline-color: white;
+    place-content: "Enter your message!";
  }
 
  footer button {
- 	font-family: 'Nunito', sans-serif;
- 	font-size: 20px;
- 	background: white;
- 	color: rgba(9, 4, 50, 1);
- 	padding: 0.7em 1em;
- 	padding-left: 0.9em;
- 	display: flex;
- 	align-items: center;
- 	border: none;
- 	border-radius: 16px;
- 	overflow: hidden;
- 	transition: all 0.2s;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    background: white;
+    color: rgba(9, 4, 50, 1);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
  }
 
  @keyframes fly-1 {
- 	from {
- 		transform: translateY(0.1em);
- 	}
+    from {
+        transform: translateY(0.1em);
+    }
 
- 	to {
- 		transform: translateY(-0.1em);
- 	}
+    to {
+        transform: translateY(-0.1em);
+    }
  }
 
  footer button span {
- 	display: block;
- 	margin-left: 0.3em;
- 	transition: all 0.3s ease-in-out;
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
  }
 
  footer button svg {
- 	display: block;
- 	transform-origin: center center;
- 	transition: transform 0.3s ease-in-out;
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
  }
 
  footer button:hover .svg-wrapper {
- 	animation: fly-1 0.6s ease-in-out infinite alternate;
+    animation: fly-1 0.6s ease-in-out infinite alternate;
  }
 
  footer button:hover svg {
- 	transform: translateX(2.5em) rotate(45deg) scale(1.1);
+    transform: translateX(2.5em) rotate(45deg) scale(1.1);
  }
 
  footer button:hover span {
- 	transform: translateX(7em);
+    transform: translateX(7em);
  }
 
  footer button:active {
- 	transform: scale(0.95);
+    transform: scale(0.95);
  }
 
  #footer_div2 {
- 	display: flex;
- 	justify-content: center;
- 	width: 90%;
- 	border-top: 3px solid white;
- 	margin-top: 257px;
- 	margin-left: auto;
- 	margin-right: auto;
- 	color: white;
- 	padding-top: 17px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border-top: 3px solid white;
+    margin-top: 257px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding-top: 17px;
  }
 
 
-
  @media (max-width: 470px) {
- 	#s1 {
+    #s1 {
         height: 177vh;
- 		background-size: 290%;
- 		background-position: center;
- 	}
+        background-size: 290%;
+        background-position: center;
+    }
 
- 	.menu__btn {
- 		top: 121px;
- 	}
+    .menu__btn {
+        top: 121px;
+    }
 
- 	#s1_head {
+    #s1_head {
     margin-top: 227px;
     font-size: 27px;
  }
@@ -576,8 +575,8 @@
  }
 
   #design_img {
-    width: 117px;
-    height: 117px;
+    width: 97px;
+    height: 97px;
  }
 
   #s3 {
@@ -606,7 +605,6 @@
         background-size: 457%;
         background-position: center;
     }
-
     footer {
         display: flex;
         flex-direction: column;
@@ -686,7 +684,7 @@
         font-size: medium;
         font-family: 'Nunito', sans-serif;
         font-weight: bold;
-        max-width: 177px;
+        max-width: 200px;
         margin-right: 17px;
     }
 
@@ -759,8 +757,6 @@
         color: white;
         padding-top: 17px;
     }
-
-
 
 
  }
