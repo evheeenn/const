@@ -553,6 +553,7 @@
  	}
 
  	#landing {
+        margin-top: 217px;
  		width: 450px;
  		height: 350px;
  	}
@@ -732,7 +733,7 @@
  		font-size: medium;
  		font-family: 'Nunito', sans-serif;
  		font-weight: bold;
- 		max-width: 200px;
+ 		max-width: 177px;
  		margin-right: 17px;
  	}
 
