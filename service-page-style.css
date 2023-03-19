@@ -435,11 +435,83 @@ footer button:active {
   }
 
   #frontend-section h1 {
-    font-size: 27px;
+    font-size: 17px;
+  }
+
+  #fe-photo {
+    width: 177px;
+    height: 177px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: unset;
+    background-position: center;
+  }
+
+  #fe-text {
+    width: 317px;
+    height: 317px;
+    font-size: 11px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #backend-section {
+    background-size: 317%;
+  }
+
+  #backend-section h1 {
+    font-size: 17px;
+  }
+
+  #backend-section .content {
+    flex-direction: column-reverse;
+  }
+
+  #bc-photo {
+    width: 177px;
+    height: 177px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: unset;
+    background-position: center;
+  }
+
+  #bc-text {
+    width: 317px;
+    height: 217px;
+    font-size: 11px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #design-section {
+    background-size: 297%;
+  }
+
+  #design-section h1 {
+    font-size: 17px;
+  }
+
+  #ds-photo {
+    width: 177px;
+    height: 177px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: unset;
+    background-position: center;
+  }
+
+  #ds-text {
+    width: 317px;
+    height: 317px;
+    font-size: 11px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .content {
     flex-direction: column;
+    margin-top: 7px;
   }
   #s5 {
     background-size: 457%;
