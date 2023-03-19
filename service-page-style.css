@@ -1,0 +1,602 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+#logo_div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background: rgba(9, 4, 50, 0.7);
+}
+
+#logo {
+  width: 200px;
+  height: 100px;
+  margin-left: 15px;
+  background: url('visual/logotype-removebg-preview.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  animation-name: logo_anim;
+  animation-duration: 1.5s;
+}
+
+@keyframes logo_anim {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#slogan {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: white;
+  margin-left: 35px;
+}
+
+#nav_bar {
+  width: 100%;
+  height: 45px;
+  background: rgba(35, 23, 100, 0.7);
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+
+.menu__btn {
+  position: fixed;
+  top: 120px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 7;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  z-index: 5;
+  list-style: none;
+  background-color: rgba(125, 21, 40, 0.9);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+
+#first_a {
+  margin-top: 75px;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+  color: black;
+}
+
+#frontend-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: url('visual/image_2023-03-17_20-18-41.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#frontend-section h1 {
+  margin-top: 177px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 45px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 43px;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 77px;
+}
+
+#fe-photo {
+  width: 377px;
+  height: 277px;
+  background: url('visual/frontend.png');
+  background-size: 77%;
+  background-repeat: no-repeat;
+}
+
+#fe-text {
+  width: 717px;
+  height: 317px;
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+#backend-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: url('visual/image_2023-03-17_20-18-08.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#backend-section h1 {
+  margin-top: 177px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 45px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 43px;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 77px;
+}
+
+#bc-photo {
+  width: 377px;
+  height: 277px;
+  background: url('visual/backend.png');
+  background-size: 77%;
+  background-repeat: no-repeat;
+}
+
+#bc-text {
+  width: 717px;
+  height: 317px;
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+#design-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: url('visual/image_2023-03-17_20-18-33.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#design-section h1 {
+  margin-top: 177px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 45px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 43px;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 77px;
+}
+
+#ds-photo {
+  width: 477px;
+  height: 377px;
+  background: url('visual/design.png');
+  background-size: 93%;
+  background-repeat: no-repeat;
+}
+
+#ds-text {
+  width: 517px;
+  height: 317px;
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+#s5 {
+  width: 100%;
+  height: 100vh;
+  background: url('visual/background.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  background: rgba(9, 4, 50, 0.7);
+}
+
+#footer_div1{
+  display: flex;
+  margin-top: 170px;
+}
+
+#footer_div1_1 {
+  margin-left: 150px;
+}
+
+#footer_div1_1 ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+#footer_div1_1 ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer_div1_1 ul li a:hover{
+  text-decoration: underline;
+  color: rgba(125, 21, 40, 0.9);
+}
+
+#footer_div1_2 {
+  margin-left: 500px;
+}
+
+#logo_footer {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 17px;
+  background-image: url("IT.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.h2div {
+  display: flex;
+  width: 327px;
+  border-bottom: 1.7px solid white;
+  margin-bottom: 17px;
+}
+
+#h2_1 {
+  color: white;
+  margin-bottom: 5px;
+}
+
+#h2_2 {
+  color: white;
+  margin-bottom: 15px;
+  padding-bottom: 1px;
+}
+
+#inputdiv {
+  display: flex;
+}
+
+.input {
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #e8e8e8;
+  font-size: medium;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  width: 177px;
+  margin-right: 17px;
+}
+
+.input:focus {
+  outline-color: white;
+  place-content: "Enter your message!";
+}
+
+footer button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  background: white;
+  color: rgba(9, 4, 50, 1);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+footer button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+footer button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+footer button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+footer button:hover svg {
+  transform: translateX(2.5em) rotate(45deg) scale(1.1);
+}
+
+footer button:hover span {
+  transform: translateX(7em);
+}
+
+footer button:active {
+  transform: scale(0.95);
+}
+
+#footer_div2 {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  border-top: 3px solid white;
+  margin-top: 257px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  padding-top: 17px;
+}
+
+@media (max-width: 470px){
+  #frontend-section {
+    background-size: 297%;
+  }
+
+  #frontend-section h1 {
+    font-size: 27px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+  #s5 {
+    background-size: 457%;
+    background-position: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    background: rgba(9, 4, 50, 0.7);
+  }
+
+  #footer_div1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 77px;
+  }
+
+  #footer_div1_1 {
+    margin-left: 37px;
+  }
+
+  #footer_div1_1 ul li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+
+  #footer_div1_1 ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #footer_div1_1 ul li a:hover{
+    text-decoration: underline;
+    color: rgba(125, 21, 40, 0.9);
+  }
+
+  #ua_logo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url("Flag_of_Ukraine.svg.webp");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+  }
+
+  #footer_div1_2 {
+    margin-top: 107px;
+    margin-left: 7px;
+  }
+
+  .h2div {
+    display: flex;
+    width: 327px;
+    border-bottom: 1.7px solid white;
+    margin-bottom: 17px;
+  }
+
+  #h2_1 {
+    color: white;
+    margin-bottom: 5px;
+  }
+
+  #h2_2 {
+    color: white;
+    margin-bottom: 15px;
+    padding-bottom: 1px;
+  }
+
+  #inputdiv {
+    display: flex;
+  }
+
+  .input {
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    font-size: medium;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    max-width: 177px;
+    margin-right: 17px;
+  }
+
+  .input:focus {
+    outline-color: white;
+    place-content: "Enter your message!";
+  }
+
+  footer button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    background: white;
+    color: rgba(9, 4, 50, 1);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+
+  footer button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+
+  footer button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  footer button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+
+  footer button:hover svg {
+    transform: translateX(2.5em) rotate(45deg) scale(1.1);
+  }
+
+  footer button:hover span {
+    transform: translateX(7em);
+  }
+
+  footer button:active {
+    transform: scale(0.95);
+  }
+
+  #footer_div2 {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border-top: 3px solid white;
+    margin-top: 127px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding-top: 17px;
+  }
+
+}
