@@ -44,7 +44,7 @@ header {
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
   color: white;
-  margin-left: 35px;
+  margin-left: 15px;
 }
 
 #nav_bar {
@@ -464,7 +464,7 @@ footer button:active {
   }
 
   #backend-section {
-    background-size: 357%;
+    background-size: 337%;
   }
 
   #backend-section h1 {
